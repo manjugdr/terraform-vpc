@@ -1,0 +1,35 @@
+
+variable "cidr_block" {
+       default = "192.168.0.0/16"
+}
+variable "cidr_block_pub1" {
+      default = "192.168.1.0/24"
+}
+variable "cidr_block_pub2" {
+      default = "192.168.2.0/24"
+}
+variable "cidr_block_internet" {
+     default = "0.0.0.0/0"
+}
+variable "cidr_block_private1" {
+       default = "192.168.3.0/24"
+}
+variable "cidr_block_private2" {
+        default = "192.168.4.0/24"
+}
+variable "cidr_block_NAT" {
+       default = "0.0.0.0/0"
+}
+variable "ami_id" {
+      default = "ami-007020fd9c84e18c7"
+}
+
+
+variable "instance_type" {
+    type = string
+  default = "t3.micro"
+}
+variable "availability_zone" {
+    default = "ap-south-1a"
+  
+}
